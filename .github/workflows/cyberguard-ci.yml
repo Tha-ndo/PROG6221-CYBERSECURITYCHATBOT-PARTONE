@@ -18,11 +18,11 @@ jobs:
       with:
         dotnet-version: 8.0.x
     
-    - name: Restore dependencies
+        - name: Restore dependencies
       run: dotnet restore "PART-1.csproj"
     
     - name: Build
       run: dotnet build "PART-1.csproj" --no-restore --configuration Release
     
     - name: Check syntax errors
-      run: dotnet build "PART-1.csproj" --no-incremental --warninglevel 4s
+      run: dotnet build "PART-1.csproj" --no-incremental --warninglevel 4
