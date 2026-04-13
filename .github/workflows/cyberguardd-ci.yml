@@ -22,10 +22,10 @@ jobs:
       run: ls -la
     
     - name: Restore dependencies
-      run: dotnet restore "PART 1.csproj"
+      run: dotnet restore "PART-1.csproj"
     
     - name: Build
-      run: dotnet build "PART 1.csproj" --no-restore --configuration Release
+      run: dotnet build "PART-1.csproj" --no-restore --configuration Release
     
     - name: Check syntax errors
-      run: dotnet build "PART 1.csproj" --no-incremental --warninglevel 4
+      run: dotnet build "PART-1.csproj" --no-incremental --warninglevel 4
